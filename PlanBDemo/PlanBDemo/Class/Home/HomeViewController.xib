@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="cardView" destination="brM-f3-sGV" id="osV-8A-mTf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brM-f3-sGV" customClass="CardView">
+                    <rect key="frame" x="30" y="100" width="315" height="380"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="380" id="Z7H-8k-kiP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1Q-pT-d0a">
+                    <rect key="frame" x="16" y="508" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="bt_undo_normal"/>
+                    <state key="highlighted" image="bt_undo_light"/>
+                    <connections>
+                        <action selector="undo:" destination="-1" eventType="touchUpInside" id="7NJ-V9-kVz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-HE-VXZ">
+                    <rect key="frame" x="85" y="508" width="80" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="bt_unlike_normal"/>
+                    <state key="highlighted" image="bt_unlike_light"/>
+                    <connections>
+                        <action selector="unlike:" destination="-1" eventType="touchUpInside" id="ALL-fD-ZGj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVM-Hx-Lbc">
+                    <rect key="frame" x="186" y="508" width="80" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="bt_like_normal"/>
+                    <state key="highlighted" image="bt_like_light"/>
+                    <connections>
+                        <action selector="like:" destination="-1" eventType="touchUpInside" id="2fk-Gn-u06"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMd-43-R4R">
+                    <rect key="frame" x="295" y="508" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="bt_save_normal"/>
+                    <state key="highlighted" image="bt_save_light"/>
+                    <connections>
+                        <action selector="save:" destination="-1" eventType="touchUpInside" id="eGK-ag-z76"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="brM-f3-sGV" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="DTJ-RH-lOz"/>
+                <constraint firstItem="brM-f3-sGV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="c2l-od-Qbj"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="brM-f3-sGV" secondAttribute="trailing" constant="30" id="wAn-hs-OpW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-45.5" y="-6.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt_like_light" width="80" height="79"/>
+        <image name="bt_like_normal" width="80" height="79"/>
+        <image name="bt_save_light" width="60" height="60"/>
+        <image name="bt_save_normal" width="60" height="60"/>
+        <image name="bt_undo_light" width="60" height="60"/>
+        <image name="bt_undo_normal" width="60" height="60"/>
+        <image name="bt_unlike_light" width="80" height="79"/>
+        <image name="bt_unlike_normal" width="80" height="79"/>
+    </resources>
+</document>
