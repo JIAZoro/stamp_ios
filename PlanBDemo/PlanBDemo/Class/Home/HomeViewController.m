@@ -11,6 +11,7 @@
 #import "CustomCardView.h"
 #import <Masonry.h>
 #import <UICountingLabel.h>
+#import "RandomData.h"
 
 @interface HomeViewController () <CardViewDelegate,CardViewDataSource>
 
@@ -49,7 +50,7 @@
         [self.array addObject:@(i)];
     }
     
-    [self.dataArray addObjectsFromArray:self.array];
+    [self.dataArray addObjectsFromArray:[[RandomData sharemanager] randomWithCount:5]];
     
     [self setCardView];
     
@@ -83,7 +84,10 @@
 }
 
 - (void)moreData {
-    [self.dataArray addObjectsFromArray:self.array];
+    NSArray *array = [[RandomData sharemanager] randomWithCount:1000];
+//    NSLog(@"%@",array);
+    
+    [self.dataArray addObjectsFromArray:array];
     [self.cardView reloadData];
 }
 
@@ -96,7 +100,7 @@
     }
     
     NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"https://",@"img",@"特别纪念邮票(2008)",@"name",@"103/200(张)",@"grade",@"发行量：50W",@"count", nil];
-    itemView.stampInfo = dic;
+    itemView.stampInfo = self.dataArray[index];
     
     typeof(self) weakself = self;
     itemView.removeItemBlock = ^(BOOL isLeft) {

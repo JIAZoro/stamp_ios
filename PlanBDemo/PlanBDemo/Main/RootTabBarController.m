@@ -8,6 +8,9 @@
 
 #import "RootTabBarController.h"
 #import "HomeViewController.h"
+#import "ExchangeViewController.h"
+#import "MyStampViewController.h"
+
 #import "AboutMeViewController.h"
 @interface RootTabBarController ()
 @property (nonatomic) NSMutableArray *controllers;
@@ -22,10 +25,10 @@
 }
 
 - (void)setTabBarItems{
-    NSArray *classArray = @[@"HomeViewController",@"AboutMeViewController"];
-    NSArray *itemNormalIconArray = @[@"item_home_normal",@"item_me_normal"];
-    NSArray *itemSelectedIconArray = @[@"item_home_selected",@"item_me_selected"];
-    NSArray *itemNameArray = @[@"首页",@"我"];
+    NSArray *classArray = @[@"HomeViewController",@"ExchangeViewController",@"MyStampViewController",@"AboutMeViewController"];
+    NSArray *itemNormalIconArray = @[@"item_home_normal",@"",@"",@"item_me_normal"];
+    NSArray *itemSelectedIconArray = @[@"item_home_selected",@"",@"",@"item_me_selected"];
+    NSArray *itemNameArray = @[@"首页",@"交易所",@"我的邮票",@"我"];
     
     for (int i = 0; i < classArray.count; i++) {
         UIViewController *viewController = [[NSClassFromString(classArray[i]) alloc] init];

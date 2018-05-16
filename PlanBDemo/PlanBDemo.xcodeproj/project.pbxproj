@@ -13,6 +13,19 @@
 		08664E5F2099EEB90041F103 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08664E5D2099EEB90041F103 /* AboutMeViewController.m */; };
 		08664E602099EEB90041F103 /* AboutMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08664E5E2099EEB90041F103 /* AboutMeViewController.xib */; };
 		08664E62209B66060041F103 /* 金币.png in Resources */ = {isa = PBXBuildFile; fileRef = 08664E61209B66050041F103 /* 金币.png */; };
+		08CB41CD20A08BB200E30EE7 /* MyStampViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41CB20A08BB200E30EE7 /* MyStampViewController.m */; };
+		08CB41CE20A08BB200E30EE7 /* MyStampViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CB41CC20A08BB200E30EE7 /* MyStampViewController.xib */; };
+		08CB41D120A08DB500E30EE7 /* StampCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41D020A08DB500E30EE7 /* StampCollectionView.m */; };
+		08CB41D420A0908A00E30EE7 /* StampCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41D320A0908A00E30EE7 /* StampCollectionViewCell.m */; };
+		08CB41D920A1E3D500E30EE7 /* ExchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41D720A1E3D500E30EE7 /* ExchangeViewController.m */; };
+		08CB41DA20A1E3D500E30EE7 /* ExchangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CB41D820A1E3D500E30EE7 /* ExchangeViewController.xib */; };
+		08CB41DD20A1E44B00E30EE7 /* ExchangeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41DC20A1E44B00E30EE7 /* ExchangeCollectionView.m */; };
+		08CB41E020A2E3DC00E30EE7 /* StainLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41DF20A2E3DC00E30EE7 /* StainLayer.m */; };
+		08CB41E320A3279C00E30EE7 /* 邮戳1.png in Resources */ = {isa = PBXBuildFile; fileRef = 08CB41E120A3279C00E30EE7 /* 邮戳1.png */; };
+		08CB41E420A3279D00E30EE7 /* 邮戳0.png in Resources */ = {isa = PBXBuildFile; fileRef = 08CB41E220A3279C00E30EE7 /* 邮戳0.png */; };
+		08CB41E720A97A5F00E30EE7 /* RandomData.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41E620A97A5F00E30EE7 /* RandomData.m */; };
+		08CB41EA20A9D49100E30EE7 /* LineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41E920A9D49100E30EE7 /* LineLayer.m */; };
+		08CB41ED20A9D65000E30EE7 /* PostMarkLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41EC20A9D65000E30EE7 /* PostMarkLayer.m */; };
 		286148EE20943ED600C85118 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 286148ED20943ED600C85118 /* AppDelegate.m */; };
 		286148F620943ED600C85118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286148F520943ED600C85118 /* Assets.xcassets */; };
 		286148F920943ED600C85118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286148F720943ED600C85118 /* LaunchScreen.storyboard */; };
@@ -36,6 +49,28 @@
 		08664E5D2099EEB90041F103 /* AboutMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 		08664E5E2099EEB90041F103 /* AboutMeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutMeViewController.xib; sourceTree = "<group>"; };
 		08664E61209B66050041F103 /* 金币.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "金币.png"; sourceTree = "<group>"; };
+		08CB41CA20A08BB200E30EE7 /* MyStampViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyStampViewController.h; sourceTree = "<group>"; };
+		08CB41CB20A08BB200E30EE7 /* MyStampViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyStampViewController.m; sourceTree = "<group>"; };
+		08CB41CC20A08BB200E30EE7 /* MyStampViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyStampViewController.xib; sourceTree = "<group>"; };
+		08CB41CF20A08DB500E30EE7 /* StampCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StampCollectionView.h; sourceTree = "<group>"; };
+		08CB41D020A08DB500E30EE7 /* StampCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StampCollectionView.m; sourceTree = "<group>"; };
+		08CB41D220A0908A00E30EE7 /* StampCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StampCollectionViewCell.h; sourceTree = "<group>"; };
+		08CB41D320A0908A00E30EE7 /* StampCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StampCollectionViewCell.m; sourceTree = "<group>"; };
+		08CB41D620A1E3D500E30EE7 /* ExchangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangeViewController.h; sourceTree = "<group>"; };
+		08CB41D720A1E3D500E30EE7 /* ExchangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangeViewController.m; sourceTree = "<group>"; };
+		08CB41D820A1E3D500E30EE7 /* ExchangeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeViewController.xib; sourceTree = "<group>"; };
+		08CB41DB20A1E44B00E30EE7 /* ExchangeCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangeCollectionView.h; sourceTree = "<group>"; };
+		08CB41DC20A1E44B00E30EE7 /* ExchangeCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangeCollectionView.m; sourceTree = "<group>"; };
+		08CB41DE20A2E3DC00E30EE7 /* StainLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StainLayer.h; sourceTree = "<group>"; };
+		08CB41DF20A2E3DC00E30EE7 /* StainLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StainLayer.m; sourceTree = "<group>"; };
+		08CB41E120A3279C00E30EE7 /* 邮戳1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮戳1.png"; sourceTree = "<group>"; };
+		08CB41E220A3279C00E30EE7 /* 邮戳0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "邮戳0.png"; sourceTree = "<group>"; };
+		08CB41E520A97A5F00E30EE7 /* RandomData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomData.h; sourceTree = "<group>"; };
+		08CB41E620A97A5F00E30EE7 /* RandomData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomData.m; sourceTree = "<group>"; };
+		08CB41E820A9D49100E30EE7 /* LineLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineLayer.h; sourceTree = "<group>"; };
+		08CB41E920A9D49100E30EE7 /* LineLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineLayer.m; sourceTree = "<group>"; };
+		08CB41EB20A9D65000E30EE7 /* PostMarkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostMarkLayer.h; sourceTree = "<group>"; };
+		08CB41EC20A9D65000E30EE7 /* PostMarkLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostMarkLayer.m; sourceTree = "<group>"; };
 		08CB98072099D3D700314A33 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		286148E920943ED600C85118 /* PlanBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286148EC20943ED600C85118 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +126,32 @@
 			path = aboutMe;
 			sourceTree = "<group>";
 		};
+		08CB41C920A08B6800E30EE7 /* 我的邮册 */ = {
+			isa = PBXGroup;
+			children = (
+				08CB41CA20A08BB200E30EE7 /* MyStampViewController.h */,
+				08CB41CB20A08BB200E30EE7 /* MyStampViewController.m */,
+				08CB41CC20A08BB200E30EE7 /* MyStampViewController.xib */,
+				08CB41CF20A08DB500E30EE7 /* StampCollectionView.h */,
+				08CB41D020A08DB500E30EE7 /* StampCollectionView.m */,
+				08CB41D220A0908A00E30EE7 /* StampCollectionViewCell.h */,
+				08CB41D320A0908A00E30EE7 /* StampCollectionViewCell.m */,
+			);
+			path = "我的邮册";
+			sourceTree = "<group>";
+		};
+		08CB41D520A1E36B00E30EE7 /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				08CB41D620A1E3D500E30EE7 /* ExchangeViewController.h */,
+				08CB41D720A1E3D500E30EE7 /* ExchangeViewController.m */,
+				08CB41D820A1E3D500E30EE7 /* ExchangeViewController.xib */,
+				08CB41DB20A1E44B00E30EE7 /* ExchangeCollectionView.h */,
+				08CB41DC20A1E44B00E30EE7 /* ExchangeCollectionView.m */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
 		286148E020943ED600C85118 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +195,8 @@
 		28614902209444DB00C85118 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				08CB41D520A1E36B00E30EE7 /* Exchange */,
+				08CB41C920A08B6800E30EE7 /* 我的邮册 */,
 				08664E5B2099EE990041F103 /* aboutMe */,
 				286149062094468E00C85118 /* Home */,
 			);
@@ -143,11 +206,19 @@
 		286149062094468E00C85118 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				08CB41E520A97A5F00E30EE7 /* RandomData.h */,
+				08CB41E620A97A5F00E30EE7 /* RandomData.m */,
 				286149122094488800C85118 /* HomeViewController.h */,
 				286149132094488800C85118 /* HomeViewController.m */,
 				286149142094488800C85118 /* HomeViewController.xib */,
 				0845464C20963249009A7F11 /* CustomCardView.h */,
 				0845464D20963249009A7F11 /* CustomCardView.m */,
+				08CB41DE20A2E3DC00E30EE7 /* StainLayer.h */,
+				08CB41DF20A2E3DC00E30EE7 /* StainLayer.m */,
+				08CB41E820A9D49100E30EE7 /* LineLayer.h */,
+				08CB41E920A9D49100E30EE7 /* LineLayer.m */,
+				08CB41EB20A9D65000E30EE7 /* PostMarkLayer.h */,
+				08CB41EC20A9D65000E30EE7 /* PostMarkLayer.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -185,6 +256,8 @@
 			isa = PBXGroup;
 			children = (
 				08664E61209B66050041F103 /* 金币.png */,
+				08CB41E120A3279C00E30EE7 /* 邮戳1.png */,
+				08CB41E220A3279C00E30EE7 /* 邮戳0.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -296,8 +369,12 @@
 			files = (
 				08664E62209B66060041F103 /* 金币.png in Resources */,
 				286148F920943ED600C85118 /* LaunchScreen.storyboard in Resources */,
+				08CB41CE20A08BB200E30EE7 /* MyStampViewController.xib in Resources */,
+				08CB41E420A3279D00E30EE7 /* 邮戳0.png in Resources */,
 				286148F620943ED600C85118 /* Assets.xcassets in Resources */,
+				08CB41E320A3279C00E30EE7 /* 邮戳1.png in Resources */,
 				08664E602099EEB90041F103 /* AboutMeViewController.xib in Resources */,
+				08CB41DA20A1E3D500E30EE7 /* ExchangeViewController.xib in Resources */,
 				286149162094488800C85118 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,16 +425,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08CB41CD20A08BB200E30EE7 /* MyStampViewController.m in Sources */,
 				28EFDEC22099C1E200207AE5 /* HttpRequestTools.m in Sources */,
 				080E1A6B20962878006384BB /* CardItemView.m in Sources */,
+				08CB41E720A97A5F00E30EE7 /* RandomData.m in Sources */,
+				08CB41E020A2E3DC00E30EE7 /* StainLayer.m in Sources */,
+				08CB41D920A1E3D500E30EE7 /* ExchangeViewController.m in Sources */,
 				080E1A6A20962878006384BB /* CardView.m in Sources */,
 				286148FC20943ED600C85118 /* main.m in Sources */,
 				08664E5F2099EEB90041F103 /* AboutMeViewController.m in Sources */,
 				0845464E20963249009A7F11 /* CustomCardView.m in Sources */,
+				08CB41DD20A1E44B00E30EE7 /* ExchangeCollectionView.m in Sources */,
 				286149192094497200C85118 /* RootTabBarController.m in Sources */,
+				08CB41D120A08DB500E30EE7 /* StampCollectionView.m in Sources */,
+				08CB41ED20A9D65000E30EE7 /* PostMarkLayer.m in Sources */,
 				286148EE20943ED600C85118 /* AppDelegate.m in Sources */,
 				286149102094482C00C85118 /* AppDelegate+RootViewController.m in Sources */,
+				08CB41EA20A9D49100E30EE7 /* LineLayer.m in Sources */,
 				286149152094488800C85118 /* HomeViewController.m in Sources */,
+				08CB41D420A0908A00E30EE7 /* StampCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

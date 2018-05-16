@@ -7,6 +7,10 @@
 //
 
 #import "CustomCardView.h"
+#import "StainLayer.h"
+#import "LineLayer.h"
+#import "PostMarkLayer.h"
+
 @interface CustomCardView ()
 
 @property (nonatomic) UIImageView *stampImageView;  //邮票图片
@@ -38,6 +42,23 @@
     [self addSubview:self.stampName];
     [self addSubview:self.stampGrade];
 //    [self addSubview:self.issueCount];
+//
+//    StainLayer *layer = [[StainLayer alloc] init];
+//    layer.backgroundColor = [UIColor clearColor].CGColor;
+//    layer.bounds = CGRectMake(0, 0, 275, 275);
+//    layer.position = CGPointMake(0, 0);
+//    layer.anchorPoint = CGPointMake(0, 0);
+//
+//    [layer setNeedsDisplay];
+//    [self.stampImageView.layer addSublayer:layer];
+
+//    CALayer *mask = [CALayer layer];
+//    mask.frame = CGRectMake(0, 0, 200, 200);
+//
+//    mask.cornerRadius = 50;
+//    mask.backgroundColor = [UIColor blackColor].CGColor;
+//
+//    [self.stampImageView.layer addSublayer:mask];
 }
 
 - (void)layoutSubviews{
@@ -76,13 +97,66 @@
 //        make.right.mas_equalTo(weakself).mas_offset(-10);
 //        make.height.mas_equalTo(weakself.stampGrade);
 //    }];
+    
 }
 
 - (void)setStampInfo:(NSDictionary *)stampInfo{
+    NSLog(@"%@",stampInfo);
+    
+    [_stampBgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"stamp_bg_%@",stampInfo[@"rank"]]]];
+
+
+    
     [_stampImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:stampInfo[@"img"]]]]];
-    _stampName.text = stampInfo[@"name"];
-    _stampGrade.text = stampInfo[@"grade"];
-    _issueCount.text = stampInfo[@"count"];
+    _stampName.text = @"邮票名字";
+    _stampGrade.text = @"等级";
+    _issueCount.text = @"数量";
+    
+    NSInteger count = self.stampImageView.layer.sublayers.count;
+    
+    for (int i = 0; i < count; i++) {
+        [self.stampImageView.layer.sublayers[0] removeFromSuperlayer];
+    }
+    
+    NSArray *array = stampInfo[@"mask"];
+    
+    if (array != nil) {
+        for (id num in array) {
+            if ([num integerValue] == 0) {
+                StainLayer *layer = [[StainLayer alloc] init];
+                layer.backgroundColor = [UIColor clearColor].CGColor;
+                layer.bounds = CGRectMake(0, 0, 275, 275);
+                layer.position = CGPointMake(0, 0);
+                layer.anchorPoint = CGPointMake(0, 0);
+                
+                [layer setNeedsDisplay];
+                [self.stampImageView.layer addSublayer:layer];
+                
+            }
+            if ([num integerValue] == 1) {
+                LineLayer *layer = [[LineLayer alloc] init];
+                layer.backgroundColor = [UIColor clearColor].CGColor;
+                layer.bounds = CGRectMake(0, 0, 275, 275);
+                layer.position = CGPointMake(0, 0);
+                layer.anchorPoint = CGPointMake(0, 0);
+                
+                [layer setNeedsDisplay];
+                [self.stampImageView.layer addSublayer:layer];
+            }
+            if ([num integerValue] == 2) {
+                PostMarkLayer *layer = [[PostMarkLayer alloc] init];
+                layer.backgroundColor = [UIColor clearColor].CGColor;
+                layer.bounds = CGRectMake(0, 0, 275, 275);
+                layer.position = CGPointMake(0, 0);
+                layer.anchorPoint = CGPointMake(0, 0);
+                
+                [layer setNeedsDisplay];
+                [self.stampImageView.layer addSublayer:layer];
+            }
+        }
+    }
+    
+    
 }
 
 - (UIImageView *)stampImageView{
@@ -122,7 +196,25 @@
 - (UIImageView *)stampBgView{
     if (!_stampBgView) {
         _stampBgView = [[UIImageView alloc] init];
-        [_stampBgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"stamp_bg_%d",arc4random()%5]]];
+        // 0
+        // 1    1~59
+        // 2    60~160
+        // 3    161~
+        CGFloat grade = arc4random()%1000;
+        NSInteger leave = 9;
+        if (grade >= 940 && grade <= 998) {
+            leave = 1;
+        }else if (grade <=939  && grade >= 840){
+            leave = 2;
+        }else if (grade <=839  && grade >= 600){
+            leave = 3;
+        }else if (grade <= 599 && grade >= 0){
+            leave = 4;
+        }else{
+            leave = 0;
+        }
+        
+        
     }
     return _stampBgView;
 }
