@@ -12,7 +12,8 @@
 #import <Masonry.h>
 #import <UICountingLabel.h>
 #import "RandomData.h"
-
+#import "ImageFix.h"
+#import "ShowImageViewController.h"
 @interface HomeViewController () <CardViewDelegate,CardViewDataSource>
 
 @property (weak, nonatomic) IBOutlet CardView *cardView;
@@ -76,6 +77,12 @@
     [self.cardView deleteTheTopItemViewWithLeft:NO];
 }
 - (IBAction)save:(id)sender {
+    UIImage *image = [ImageFix shotWithView:self.view scope:CGRectMake(_cardView.frame.origin.x, _cardView.frame.origin.y, _cardView.frame.size.width, _cardView.frame.size.width)];
+    ShowImageViewController *vc = [[ShowImageViewController alloc] init];
+    vc.image = image;
+    
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)cardViewNeedMoreData:(CardView *)cardView {

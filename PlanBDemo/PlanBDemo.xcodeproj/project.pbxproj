@@ -26,6 +26,9 @@
 		08CB41E720A97A5F00E30EE7 /* RandomData.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41E620A97A5F00E30EE7 /* RandomData.m */; };
 		08CB41EA20A9D49100E30EE7 /* LineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41E920A9D49100E30EE7 /* LineLayer.m */; };
 		08CB41ED20A9D65000E30EE7 /* PostMarkLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41EC20A9D65000E30EE7 /* PostMarkLayer.m */; };
+		08CB41F020ADBC2D00E30EE7 /* ImageFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41EF20ADBC2D00E30EE7 /* ImageFix.m */; };
+		08CB41F920ADBFA300E30EE7 /* ShowImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CB41F720ADBFA300E30EE7 /* ShowImageViewController.m */; };
+		08CB41FA20ADBFA300E30EE7 /* ShowImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08CB41F820ADBFA300E30EE7 /* ShowImageViewController.xib */; };
 		286148EE20943ED600C85118 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 286148ED20943ED600C85118 /* AppDelegate.m */; };
 		286148F620943ED600C85118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286148F520943ED600C85118 /* Assets.xcassets */; };
 		286148F920943ED600C85118 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286148F720943ED600C85118 /* LaunchScreen.storyboard */; };
@@ -71,6 +74,11 @@
 		08CB41E920A9D49100E30EE7 /* LineLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineLayer.m; sourceTree = "<group>"; };
 		08CB41EB20A9D65000E30EE7 /* PostMarkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostMarkLayer.h; sourceTree = "<group>"; };
 		08CB41EC20A9D65000E30EE7 /* PostMarkLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostMarkLayer.m; sourceTree = "<group>"; };
+		08CB41EE20ADBC2D00E30EE7 /* ImageFix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFix.h; sourceTree = "<group>"; };
+		08CB41EF20ADBC2D00E30EE7 /* ImageFix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFix.m; sourceTree = "<group>"; };
+		08CB41F620ADBFA300E30EE7 /* ShowImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowImageViewController.h; sourceTree = "<group>"; };
+		08CB41F720ADBFA300E30EE7 /* ShowImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowImageViewController.m; sourceTree = "<group>"; };
+		08CB41F820ADBFA300E30EE7 /* ShowImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowImageViewController.xib; sourceTree = "<group>"; };
 		08CB98072099D3D700314A33 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		286148E920943ED600C85118 /* PlanBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286148EC20943ED600C85118 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -208,17 +216,14 @@
 			children = (
 				08CB41E520A97A5F00E30EE7 /* RandomData.h */,
 				08CB41E620A97A5F00E30EE7 /* RandomData.m */,
+				08CB41F620ADBFA300E30EE7 /* ShowImageViewController.h */,
+				08CB41F720ADBFA300E30EE7 /* ShowImageViewController.m */,
+				08CB41F820ADBFA300E30EE7 /* ShowImageViewController.xib */,
 				286149122094488800C85118 /* HomeViewController.h */,
 				286149132094488800C85118 /* HomeViewController.m */,
 				286149142094488800C85118 /* HomeViewController.xib */,
 				0845464C20963249009A7F11 /* CustomCardView.h */,
 				0845464D20963249009A7F11 /* CustomCardView.m */,
-				08CB41DE20A2E3DC00E30EE7 /* StainLayer.h */,
-				08CB41DF20A2E3DC00E30EE7 /* StainLayer.m */,
-				08CB41E820A9D49100E30EE7 /* LineLayer.h */,
-				08CB41E920A9D49100E30EE7 /* LineLayer.m */,
-				08CB41EB20A9D65000E30EE7 /* PostMarkLayer.h */,
-				08CB41EC20A9D65000E30EE7 /* PostMarkLayer.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -240,6 +245,14 @@
 		286149092094470F00C85118 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				08CB41DE20A2E3DC00E30EE7 /* StainLayer.h */,
+				08CB41DF20A2E3DC00E30EE7 /* StainLayer.m */,
+				08CB41E820A9D49100E30EE7 /* LineLayer.h */,
+				08CB41E920A9D49100E30EE7 /* LineLayer.m */,
+				08CB41EB20A9D65000E30EE7 /* PostMarkLayer.h */,
+				08CB41EC20A9D65000E30EE7 /* PostMarkLayer.m */,
+				08CB41EE20ADBC2D00E30EE7 /* ImageFix.h */,
+				08CB41EF20ADBC2D00E30EE7 /* ImageFix.m */,
 				080E1A6520962878006384BB /* CardView */,
 			);
 			path = Custom;
@@ -370,6 +383,7 @@
 				08664E62209B66060041F103 /* 金币.png in Resources */,
 				286148F920943ED600C85118 /* LaunchScreen.storyboard in Resources */,
 				08CB41CE20A08BB200E30EE7 /* MyStampViewController.xib in Resources */,
+				08CB41FA20ADBFA300E30EE7 /* ShowImageViewController.xib in Resources */,
 				08CB41E420A3279D00E30EE7 /* 邮戳0.png in Resources */,
 				286148F620943ED600C85118 /* Assets.xcassets in Resources */,
 				08CB41E320A3279C00E30EE7 /* 邮戳1.png in Resources */,
@@ -430,6 +444,7 @@
 				080E1A6B20962878006384BB /* CardItemView.m in Sources */,
 				08CB41E720A97A5F00E30EE7 /* RandomData.m in Sources */,
 				08CB41E020A2E3DC00E30EE7 /* StainLayer.m in Sources */,
+				08CB41F920ADBFA300E30EE7 /* ShowImageViewController.m in Sources */,
 				08CB41D920A1E3D500E30EE7 /* ExchangeViewController.m in Sources */,
 				080E1A6A20962878006384BB /* CardView.m in Sources */,
 				286148FC20943ED600C85118 /* main.m in Sources */,
@@ -440,6 +455,7 @@
 				08CB41D120A08DB500E30EE7 /* StampCollectionView.m in Sources */,
 				08CB41ED20A9D65000E30EE7 /* PostMarkLayer.m in Sources */,
 				286148EE20943ED600C85118 /* AppDelegate.m in Sources */,
+				08CB41F020ADBC2D00E30EE7 /* ImageFix.m in Sources */,
 				286149102094482C00C85118 /* AppDelegate+RootViewController.m in Sources */,
 				08CB41EA20A9D49100E30EE7 /* LineLayer.m in Sources */,
 				286149152094488800C85118 /* HomeViewController.m in Sources */,

@@ -10,7 +10,7 @@
 #import "StainLayer.h"
 #import "LineLayer.h"
 #import "PostMarkLayer.h"
-
+#import "ImageFix.h"
 @interface CustomCardView ()
 
 @property (nonatomic) UIImageView *stampImageView;  //邮票图片
@@ -105,9 +105,9 @@
     
     [_stampBgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"stamp_bg_%@",stampInfo[@"rank"]]]];
 
-
+    UIImage *image = [UIImage imageNamed:@"金币"];
     
-    [_stampImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:stampInfo[@"img"]]]]];
+//    [_stampImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:stampInfo[@"img"]]]]];
     _stampName.text = @"邮票名字";
     _stampGrade.text = @"等级";
     _issueCount.text = @"数量";
@@ -153,8 +153,13 @@
                 [layer setNeedsDisplay];
                 [self.stampImageView.layer addSublayer:layer];
             }
+            if ([num integerValue] == 3) {
+                image = [ImageFix colorControlsWithOriginalImage:image saturation:arc4random()%100/100.0 brightness:0.0 contrast:0.5];
+            }
         }
     }
+    
+    [_stampImageView setImage:image];
     
     
 }
