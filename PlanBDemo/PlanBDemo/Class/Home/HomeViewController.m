@@ -14,6 +14,9 @@
 #import "RandomData.h"
 #import "ImageFix.h"
 #import "ShowImageViewController.h"
+
+#import "GetNounesView.h"
+
 @interface HomeViewController () <CardViewDelegate,CardViewDataSource>
 
 @property (weak, nonatomic) IBOutlet CardView *cardView;
@@ -56,6 +59,16 @@
     [self setCardView];
     
     [self.cardView reloadData];
+}
+- (IBAction)getNoun:(id)sender {
+    [GetNounesView displayViewWithSuccessHandler:^(GetNounesView *nounView) {
+        
+    } failureHandler:^(GetNounesView *nounView) {
+        
+    } closeHandler:^(GetNounesView *nounView) {
+        
+    }];
+    
 }
 
 - (void)viewWillLayoutSubviews{

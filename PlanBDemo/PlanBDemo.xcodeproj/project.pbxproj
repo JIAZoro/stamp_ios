@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0806D23820B2EF2E0071DA22 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 0806D23720B2EF2D0071DA22 /* test.png */; };
+		0806D23B20B90BDD0071DA22 /* GetNounesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0806D23A20B90BDD0071DA22 /* GetNounesView.m */; };
 		080E1A6A20962878006384BB /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 080E1A6820962878006384BB /* CardView.m */; };
 		080E1A6B20962878006384BB /* CardItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 080E1A6920962878006384BB /* CardItemView.m */; };
 		0845464E20963249009A7F11 /* CustomCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0845464D20963249009A7F11 /* CustomCardView.m */; };
@@ -42,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0806D23720B2EF2D0071DA22 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		0806D23920B90BDD0071DA22 /* GetNounesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetNounesView.h; sourceTree = "<group>"; };
+		0806D23A20B90BDD0071DA22 /* GetNounesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetNounesView.m; sourceTree = "<group>"; };
 		080E1A6620962878006384BB /* CardItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardItemView.h; sourceTree = "<group>"; };
 		080E1A6720962878006384BB /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
 		080E1A6820962878006384BB /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
@@ -254,6 +259,8 @@
 				08CB41EE20ADBC2D00E30EE7 /* ImageFix.h */,
 				08CB41EF20ADBC2D00E30EE7 /* ImageFix.m */,
 				080E1A6520962878006384BB /* CardView */,
+				0806D23920B90BDD0071DA22 /* GetNounesView.h */,
+				0806D23A20B90BDD0071DA22 /* GetNounesView.m */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -268,6 +275,7 @@
 		2861490B2094474100C85118 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0806D23720B2EF2D0071DA22 /* test.png */,
 				08664E61209B66050041F103 /* 金币.png */,
 				08CB41E120A3279C00E30EE7 /* 邮戳1.png */,
 				08CB41E220A3279C00E30EE7 /* 邮戳0.png */,
@@ -390,6 +398,7 @@
 				08664E602099EEB90041F103 /* AboutMeViewController.xib in Resources */,
 				08CB41DA20A1E3D500E30EE7 /* ExchangeViewController.xib in Resources */,
 				286149162094488800C85118 /* HomeViewController.xib in Resources */,
+				0806D23820B2EF2E0071DA22 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +469,7 @@
 				08CB41EA20A9D49100E30EE7 /* LineLayer.m in Sources */,
 				286149152094488800C85118 /* HomeViewController.m in Sources */,
 				08CB41D420A0908A00E30EE7 /* StampCollectionViewCell.m in Sources */,
+				0806D23B20B90BDD0071DA22 /* GetNounesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

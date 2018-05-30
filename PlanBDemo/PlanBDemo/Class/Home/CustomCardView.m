@@ -105,7 +105,7 @@
     
     [_stampBgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"stamp_bg_%@",stampInfo[@"rank"]]]];
 
-    UIImage *image = [UIImage imageNamed:@"金币"];
+    UIImage *image = [UIImage imageNamed:@"test"];
     
 //    [_stampImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:stampInfo[@"img"]]]]];
     _stampName.text = @"邮票名字";
